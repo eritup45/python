@@ -1,0 +1,21 @@
+<!-- should put in the folder "templates". -->
+
+<!-- Inherit from layout.html. -->
+{% extends 'layout.html' %}
+
+<!-- Write the articles' title from data.py, and make links to articles/1, 2... -->
+{% block body %}
+    <h1>ARTICLES</h1>
+    <ul class="list-group">
+        <!-- for loop -->
+        <!-- 'atricles' is come from app.py. -->
+        {% for arti in articles %}
+            <li class='list-group-item'>
+                <a href="articles_branches/{{arti.id}}">
+                    <!-- Output the title -->
+                    {{arti.title}}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

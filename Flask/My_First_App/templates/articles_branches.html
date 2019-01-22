@@ -1,0 +1,9 @@
+<!-- should put in the folder "templates". -->
+
+<!-- Inherit from layout.html. -->
+{% extends 'layout.html' %}
+
+<!--id is passed in from app.py. -->
+{% block body %} 
+    <h1>{{id}}</h1>
+{% endblock %}
