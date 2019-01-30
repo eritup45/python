@@ -1,4 +1,4 @@
- 爬PTT beauty版
+爬PTT beauty版
 Function:
 	1. 爬PTT表特版2頁 (https://www.ptt.cc/bbs/Beauty/index.html)
 	2. 印出標題與其連結
